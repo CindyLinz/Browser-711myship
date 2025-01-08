@@ -3,6 +3,9 @@
   "name": "7-11 MyShip Form Filler",
   "version": "1.0",
   "description": "Save and fill 7-11 MyShip form data",
+  "icons": {
+    "128": "logo.png"
+  },
   "permissions": [
     "activeTab",
     "storage"
