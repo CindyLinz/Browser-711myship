@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "7-11 MyShip Form Filler",
+  "version": "1.0",
+  "description": "Save and fill 7-1 MyShip form data",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://myship2.7-11.com.tw/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

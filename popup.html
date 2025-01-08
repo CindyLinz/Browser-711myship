@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            width: 400px;
+            padding: 15px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        :root {
+            --Page03: none;
+            --Page04: none;
+        }
+        .Page03 {
+            display: var(--Page03);
+        }
+        .Page04 {
+            display: var(--Page04);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group Page04">
+            <label for="recipientSelect">選擇收件人</label>
+            <select class="form-select" id="recipientSelect">
+                <option selected>請選擇收件人...</option>
+            </select>
+        </div>
+
+        <div class="btn-group w-100 mt-3 Page03">
+            <button type="button" class="btn btn-primary" id="btnSenderSave">儲存寄件人</button>
+        </div>
+        <div class="btn-group w-100 mt-3 Page04">
+            <button type="button" class="btn btn-primary" id="btnRecvAdd">新增</button>
+            <button type="button" class="btn btn-primary" id="btnRecvSave">儲存</button>
+            <button type="button" class="btn btn-success" id="btnRecvAssign">指定</button>
+            <button type="button" class="btn btn-danger" id="btnRecvDelete">刪除</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
