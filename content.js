@@ -20,6 +20,7 @@ switch(window.location.href){
     chrome.runtime.sendMessage(
       { type: 'getStorage', key: 'sender' },
       response => {
+        let sender = response.value;
         if (sender.name) document.getElementById('senderName').value = sender.name;
         if (sender.phone) document.getElementById('senderPhone').value = sender.phone;
         if (sender.email) document.getElementById('senderEmail').value = sender.email;
